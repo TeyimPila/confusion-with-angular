@@ -11,12 +11,12 @@
     <md-grid-list cols="2" rowHeight="200px">
       <md-grid-tile *ngFor="let dish of dishes">
         <img height="200px" src={{dish.image}} alt={{dish.name}}>
-      <md-grid-tile-footer>
-        <h1 md-line>{{ dish.name | uppercase }}</h1>
-        <!-- <p md-line>
+        <md-grid-tile-footer>
+          <h1 md-line>{{ dish.name | uppercase }}</h1>
+          <!-- <p md-line>
           {{dish.description}}
         </p> -->
-      </md-grid-tile-footer>
+        </md-grid-tile-footer>
       </md-grid-tile>
     </md-grid-list>
   </div>
