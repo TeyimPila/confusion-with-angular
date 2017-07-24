@@ -2,7 +2,7 @@
 
   <div fxFlex>
     <div>
-      <h3>Menu</h3>
+      <h2>Menu</h2>
       <hr>
     </div>
   </div>
@@ -19,5 +19,23 @@
         </md-grid-tile-footer>
       </md-grid-tile>
     </md-grid-list>
+  </div>
+
+  <div fxFlex *ngIf="selectedDish">
+    <md-card>
+      <md-card-header>
+        <md-card-title>
+          <h2>{{ selectedDish.name | uppercase }}</h2>
+        </md-card-title>
+      </md-card-header>
+      <img md-card-image src="{{ selectedDish.image }}" alt="{{ selectedDish.name }}">
+      <md-card-content>
+        <p>{{ selectedDish.description }}</p>
+      </md-card-content>
+      <md-card-actions>
+        <button md-button>LIKE</button>
+        <button md-button>SHARE</button>
+      </md-card-actions>
+    </md-card>
   </div>
 </div>
