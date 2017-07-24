@@ -8,11 +8,13 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 import 'hammerjs';
 import { MenuComponent } from './menu/menu.component';
+import { DishdetailsComponent } from './dishdetails/dishdetails.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent
+    MenuComponent,
+    DishdetailsComponent
   ],
   imports: [
     BrowserModule,
