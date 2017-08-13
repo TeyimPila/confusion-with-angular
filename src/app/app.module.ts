@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 
 import { MaterialModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { AppRoutingModule } from './app-routing/app-routing.module'
+import { AppRoutingModule } from './app-routing/app-routing.module';
 import 'hammerjs';
 
 // Components
@@ -15,10 +15,11 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
-import { ContactComponent } from './contact/contact.component'
+import { ContactComponent } from './contact/contact.component';
 
 
 import { DishService } from './services/dish.service';
+import { PromotionService } from './services/promotion.service';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,7 @@ import { DishService } from './services/dish.service';
     FlexLayoutModule,
     AppRoutingModule
   ],
-  providers: [DishService],
+  providers: [DishService, PromotionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

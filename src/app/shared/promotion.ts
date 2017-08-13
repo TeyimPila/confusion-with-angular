@@ -1,4 +1,4 @@
-export class Promorion {
+export class Promotion {
     id: number;
     name: string;
     image: string;
